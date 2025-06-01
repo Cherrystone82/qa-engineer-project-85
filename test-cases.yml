@@ -14,6 +14,7 @@
     - Нажать кнопку "Войти"
   expected-result: |
     Пользователь перенаправлен на страницу лобби (https://codebattle.hexlet.io/lobby)
+
 - summary: |
     Неудачная авторизация с неверным паролем
   requirement: |
