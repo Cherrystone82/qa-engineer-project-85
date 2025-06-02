@@ -17,3 +17,11 @@
 - summary: |
     Проверка авторизации через GitHub
   status: pass
+
+- summary: |
+    Успешная регистрация нового пользователя
+  status: pass
+
+- summary: |
+    Регистрация с уже существующим email
+  status: pass
