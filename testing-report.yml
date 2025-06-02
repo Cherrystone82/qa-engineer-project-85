@@ -35,3 +35,8 @@
   status: pass
 
   
+- summary: |
+    Корректный выход из аккаунта
+  status: pass
+
+  
