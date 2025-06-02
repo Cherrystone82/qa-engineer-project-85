@@ -13,3 +13,7 @@
 - summary: |
     Авторизация с пустым полем пароля
   status: pass
+
+- summary: |
+    Проверка авторизации через GitHub
+  status: pass
