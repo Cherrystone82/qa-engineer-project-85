@@ -32,4 +32,6 @@
 
 - summary: |
     Восстановление пароля с несуществующим email
-  status: 
+  status: pass
+
+  
