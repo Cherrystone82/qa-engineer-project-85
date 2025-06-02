@@ -25,3 +25,11 @@
 - summary: |
     Регистрация с уже существующим email
   status: pass
+
+- summary: |
+    Восстановление пароля через email
+  status: pass
+
+- summary: |
+    Восстановление пароля с несуществующим email
+  status: 
