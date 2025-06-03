@@ -1,3 +1,4 @@
+___
 - summary: |
     Успешная авторизация с корректными данными
   status: pass
@@ -44,32 +45,32 @@
 
 - summary: |
     Просмотр профиля пользователя
-  status:
+  status: pass 
 
 - summary: |
     Просмотр истории боёв
-  status:
+  status: pass 
 
 - summary: |
     Начало боя с другим игроком (публичный бой)
-  status:
+  status: pass 
 
 - summary: |
     Создание приватного боя через прямую ссылку
-  status:
+  status: pass 
 
 - summary: |
     Присоединение к приватному бою по коду
-  status:
+  status: pass 
 
 - summary: |
     Неверный код при попытке присоединения к приватному бою
-  status:
+  status: pass 
 
 - summary: |
     Проверка возможности начала боя после подключения обоих игроков
-  status:
+  status: pass 
 
 - summary: |
     Проверка пагинации в лобби
-  status:
+  status: fail 
