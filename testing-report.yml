@@ -73,4 +73,4 @@ ___
 
 - summary: |
     Проверка пагинации в лобби
-  status: fail 
+  status: pass
