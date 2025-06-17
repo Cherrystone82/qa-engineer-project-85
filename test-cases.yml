@@ -231,7 +231,7 @@
   prerequisites: |
     Пользователь авторизован
   test-data: |
-    Прямая ссылка = https://codebattle.hexlet.io/private_battle/new 
+    Прямая ссылка https://codebattle.hexlet.io/private_battle/new 
   steps:
     - Открыть браузер
     - В адресной строке ввести https://codebattle.hexlet.io/private_battle/new 
@@ -289,6 +289,8 @@
     При большом количестве игр должна работать постраничная навигация
   prerequisites: |
     В системе более 10 активных игр
+  test-data: |
+    Активные игры: 25
   steps:
     - Прокрутить список игр вниз
     - Нажать "Next Page"
