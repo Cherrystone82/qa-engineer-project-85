@@ -45,31 +45,31 @@
 
 - summary: |
     Просмотр профиля пользователя
-  status: pass 
+  status: pass
 
 - summary: |
     Просмотр истории боёв
-  status: pass 
+  status: pass
 
 - summary: |
     Начало боя с другим игроком (публичный бой)
-  status: pass 
+  status: pass
 
 - summary: |
     Создание приватного боя через прямую ссылку
-  status: pass 
+  status: pass
 
 - summary: |
     Присоединение к приватному бою по коду
-  status: pass 
+  status: pass
 
 - summary: |
     Неверный код при попытке присоединения к приватному бою
-  status: pass 
+  status: pass
 
 - summary: |
     Проверка возможности начала боя после подключения обоих игроков
-  status: pass 
+  status: pass
 
 - summary: |
     Проверка пагинации в лобби
