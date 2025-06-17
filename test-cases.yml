@@ -234,7 +234,7 @@
     Прямая ссылка = https://codebattle.hexlet.io/private_battle/new 
   steps:
     - Открыть браузер
-    - В адресной строке ввести: https://codebattle.hexlet.io/private_battle/new 
+    - В адресной строке ввести https://codebattle.hexlet.io/private_battle/new 
     - Нажать Enter
   expected-result: |
     Система перенаправляет на страницу вида /private_battle/ABC123 и отображает код комнаты
@@ -249,7 +249,7 @@
     Код комнаты = ABC123
   steps:
     - Открыть браузер
-    - В адресной строке ввести: https://codebattle.hexlet.io/private_battle/join?code=ABC123
+    - В адресной строке ввести https://codebattle.hexlet.io/private_battle/join?code=ABC123
     - Нажать Enter
   expected-result: |
     Пользователь успешно подключён к комнате и видит экран ожидания
@@ -264,7 +264,7 @@
     Код комнаты = BADCODE
   steps:
     - Открыть браузер
-    - В адресной строке ввести: https://codebattle.hexlet.io/private_battle/join?code=BADCODE
+    - В адресной строке ввести https://codebattle.hexlet.io/private_battle/join?code=BADCODE
     - Нажать Enter
   expected-result: |
     Отображается сообщение: "Комната с таким кодом не найдена"
