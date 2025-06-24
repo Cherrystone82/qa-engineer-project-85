@@ -104,22 +104,25 @@
     Пользователь успешно зарегистрирован и перенаправлен на страницу лобби
 
 - summary: |
-    Регистрация с уже существующим email
+    Попытка регистрации с уже существующим email
   requirement: |
-    Система должна запретить регистрацию с существующим email
+    Система должна отклонить регистрацию при использовании занятого email
   prerequisites: |
-    Открыта страница регистрации
+    - Пользователь находится на главной странице https://codebattle.hexlet.io/
+    - Аккаунт с email existing@example.com уже существует
   test-data: |
-    Email = existing@example.com  
-    Пароль = anotherpassword
+    - Email: existing@example.com
+    - Пароль: anotherpassword
   steps:
-    - Перейти на https://codebattle.hexlet.io/ 
-    - Нажать ссылку Регистрация
-    - Ввести existing@example.com в поле Email
-    - Ввести Anotherpassword в поле Пароль
-    - Нажать кнопку Зарегистрироваться
+    - Открыть главную страницу https://codebattle.hexlet.io/
+    - Нажать кнопку 'Sign up'
+    - Ввести existing@example.com в поле 'Email'
+    - Ввести anotherpassword в поле 'Password'
+    - Нажать кнопку 'Sign up'
   expected-result: |
-    Отображается сообщение: Этот email уже зарегистрирован
+    - Отображается сообщение об ошибке "Email is already taken"
+    - Пользователь остается на странице регистрации
+    - Новый аккаунт не создается
 
 - summary: |
     Восстановление пароля через email
