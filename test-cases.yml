@@ -5,7 +5,7 @@
   prerequisites: |
     Пользователь находится на главной странице (https://codebattle.hexlet.io/)
   test-data: |
-    Логин = user@example.com  
+    Логин = user1@example.com  
     Пароль = securepassword123
   steps:
     - action: Открыть главную страницу https://codebattle.hexlet.io/
@@ -23,7 +23,7 @@
   prerequisites: |
     Открыта страница авторизации
   test-data: |
-    Логин = user@example.com  
+    Логин = user2@example.com  
     Пароль = wrongpass
   steps:
     - Перейти на https://codebattle.hexlet.io/ 
@@ -57,7 +57,7 @@
   prerequisites: |
     Открыта страница авторизации
   test-data: |
-    Логин = user@example.com  
+    Логин = user3@example.com  
     Пароль = <пусто>
   steps:
     - Перейти на https://codebattle.hexlet.io/ 
@@ -135,7 +135,7 @@
   steps:
     - Перейти на https://codebattle.hexlet.io/ 
     - Нажать Забыли пароль?
-    - Ввести user@example.com в поле Email
+    - Ввести user4@example.com в поле Email
     - Нажать Отправить инструкции
   expected-result: |
     Отображается сообщение: Инструкция отправлена на ваш email
@@ -191,7 +191,7 @@
   prerequisites: |
     Пользователь авторизован
   test-data: |
-    Пользователь = user@example.com
+    Пользователь = user1@example.com
   steps:
     - Перейти в меню пользователя
     - Нажать Профиль
