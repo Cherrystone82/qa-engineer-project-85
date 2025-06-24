@@ -10,7 +10,7 @@
   steps:
     - action: Открыть главную страницу https://codebattle.hexlet.io/
     - action: Нажать кнопку Sign in
-    - action: Ввести user@example.com в поле Email или логин
+    - action: Ввести user1@example.com в поле Email или логин
     - action: Ввести securepassword123 в поле Пароль
     - action: Нажать кнопку Submit
   expected-result: |
@@ -115,46 +115,54 @@
     - Пароль: anotherpassword
   steps:
     - Открыть главную страницу https://codebattle.hexlet.io/
-    - Нажать кнопку 'Sign up'
-    - Ввести existing@example.com в поле 'Email'
-    - Ввести anotherpassword в поле 'Password'
-    - Нажать кнопку 'Sign up'
+    - Нажать кнопку Sign up
+    - Ввести existing@example.com в поле Email
+    - Ввести anotherpassword в поле Password
+    - Нажать кнопку Sign up
   expected-result: |
-    - Отображается сообщение об ошибке "Email is already taken"
+    - Отображается сообщение об ошибке Email is already taken
     - Пользователь остается на странице регистрации
     - Новый аккаунт не создается
 
 - summary: |
     Восстановление пароля через email
   requirement: |
-    Пользователь может запросить восстановление пароля по email
+    Система должна отправить инструкции по сбросу пароля на указанный email
   prerequisites: |
-    Открыта страница восстановления пароля
+    - Пользователь находится на главной странице
+    - Аккаунт user@example.com существует в системе
   test-data: |
-    Email = user@example.com
+    - Зарегистрированный email: user@example.com
   steps:
-    - Перейти на https://codebattle.hexlet.io/ 
-    - Нажать Забыли пароль?
-    - Ввести user4@example.com в поле Email
-    - Нажать Отправить инструкции
+    - Открыть https://codebattle.hexlet.io/
+    - Нажать кнопку Sign in
+    - Найти и нажать ссылку Forgot your password?
+    - Ввести user@example.com в поле Email
+    - Нажать кнопку Submit
   expected-result: |
-    Отображается сообщение: Инструкция отправлена на ваш email
-
+    - Появляется сообщение: We have sent you an email with instructions on how to reset your password
+    - Письмо с инструкциями отправлено на user@example.com
+    - Ссылка в письме ведет на страницу смены пароля
+    
 - summary: |
-    Не удачная попытка восстановление пароля с несуществующим email
+    Неудачная попытка восстановления пароля с несуществующим email
   requirement: |
-    Система должна обработать запрос даже с несуществующим email без утечки информации
+    Система должна обработать запрос без раскрытия существования email
   prerequisites: |
-    Открыта страница восстановления пароля
+    - Открыта главная страница https://codebattle.hexlet.io/
+    - Аккаунт fakeemail@example.com не зарегистрирован
   test-data: |
-    Email = fakeemail@example.com
+    - Email: fakeemail@example.com
   steps:
-    - Перейти на https://codebattle.hexlet.io/ 
-    - Нажать Забыли пароль?
+    - Открыть https://codebattle.hexlet.io/
+    - Нажать Sign in
+    - Нажать Forgot your password?
     - Ввести fakeemail@example.com в поле Email
-    - Нажать Отправить инструкции
+    - Нажать Submit
   expected-result: |
-    Отображается сообщение: Инструкция отправлена на ваш email
+    - Отображается сообщение: We have sent you an email with instructions on how to reset your password
+    - Письмо НЕ приходит на fakeemail@example.com
+    - Система не раскрывает, зарегистрирован email или нет
 
 - summary: |
     Корректный выход из аккаунта
