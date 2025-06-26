@@ -270,13 +270,13 @@
     - Открыта страница лобби lobby
   test-data: |
     - Уровень: 215, соответствует рейтингу
-    - Ссылка: codebattle.hexlet.io/games/номер комнаты/ - например 276824
+    - Ссылка: codebattle.hexlet.io/games/номер комнаты/ например 276824
   steps:
     - Нажать CREATE A GAME в правой панели
     - Выбрать тип игры With a friend
     - Подтвердить уровень сложности 215
-    - Нажать 'Create battle
-    - Скопировать ссылку из раздела General - формат: codebattle.hexlet.io/games/276824/
+    - Нажать Create battle
+    - Скопировать ссылку из раздела General - codebattle.hexlet.io/games/276824/
   expected-result: |
     - В разделе 'General' отображается ссылка на игру
 
